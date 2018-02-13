@@ -4,9 +4,10 @@ email: lifetaboffice@gmail.com
 description: Life Tabernacle Apostolic Church of Porterville
 baseurl: '/' # the subpath of your site, e.g. /blog/
 url: 'http://www.lifetabporterville.org' # the base hostname & protocol for your site
-github_username: gio1135
 google_plus_com: 'https://plus.google.com/101881077338747748663'  # Community link
 google_plus_per: '+lifetabporterville'  #Personal link
+google_plus_image: '/img/logo.png' # Profile picture
+google_plus_bg: '/img/banner.jpg' # Banner
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
