@@ -9,7 +9,7 @@
     <meta property='og:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'>
     <meta property='og:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
     <meta property='og:image' content='/img/logo.png'>
-    <meta name='google-site-verification' content='tn303NB0kCKcQyo4iz0rvrjs5lDryAgEpxuINGvTofg'>
+    <meta name='google-site-verification' content='{{ site.google_verification }}'>
   
     <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href='{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}' />
@@ -31,7 +31,7 @@
     </script>
   
     <!-- Materialize CSS Library -->
-    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css'>
     
     <!-- Material Design Fonts -->
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto|Roboto+Condensed|Roboto+Slab|Product+Sans|Fira+Sans+Condensed'>
