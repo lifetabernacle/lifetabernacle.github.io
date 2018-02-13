@@ -2,7 +2,7 @@
 layout: post
 title: First post
 author: gio1135
-date: 2018-02-12 11:52:00 -8000
+date: 2018-02-12 11:52:00 -0800
 tags:
 - potatoes
 highlight: false
