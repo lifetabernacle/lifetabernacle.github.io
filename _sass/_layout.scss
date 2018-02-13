@@ -1,0 +1,112 @@
+/*
+ * Header
+ */
+nav {
+  background-color: $main-color;
+}
+.sidenav-button {
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 18px;
+}
+.brand-logo {
+  margin-top: 16px;
+  font-family: 'Product Sans';
+}
+.brand-logo.center {
+  margin: 0;
+}
+@media only screen and (max-width: 425px) {
+  .brand-logo {
+    width: 100%;
+    font-size: 1.5rem !important;
+  }
+}
+
+/*
+ * Side nav animation
+ */
+nav .tab a {
+  color: rgb(244, 67, 54) !important;
+}
+nav .indicator {
+  background-color: rgb(244, 67, 54) !important;
+}
+
+.tabs-content {
+  display: block;
+  overflow-y: auto;
+  padding: 10px;
+  height: 100vh !important;
+}
+.tabs-content table {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media only screen and (min-width: 601px) {
+  nav .button-collapse {
+    border-radius: 50%;
+    padding: 0 20px;
+  }
+}
+.tap-target-origin {
+  color: rgb(0, 0, 0);
+}
+
+#slide-out {
+  transition: box-shadow 0.2s ease-in-out;
+}
+#slide-out[style],
+#slide-out[style^="transform: translateX(-1"],
+#slide-out[style^="transform: translateX(-2"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.44),
+    0 1px 5px 0 rgba(0, 0, 0, 0.42),
+    0 3px 1px -2px rgba(0, 0, 0, 0.5),
+    0 0 0 105vw rgba(0, 0, 0, 0.3);
+}
+#slide-out[style^="transform: translateX(-3"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.44),
+    0 1px 5px 0 rgba(0, 0, 0, 0.42),
+    0 3px 1px -2px rgba(0, 0, 0, 0.5),
+    0 0 0 105vw rgba(0, 0, 0, 0);
+}
+#slide-out[style^="transform: translateX(-100%)"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0),
+    0 1px 5px 0 rgba(0, 0, 0, 0),
+    0 3px 1px -2px rgba(0, 0, 0, 0),
+    0 0 0 105vw rgba(0, 0, 0, 0);
+}
+.background img {
+  width: 100%;
+}
+#sidenav-overlay {
+  display: none;
+}
+.drag-target {
+  width: 20px;
+}
+
+
+/*
+ * Higlight cards
+ */
+.card.horizontal .card-image {
+  width: 30%;
+
+  img {
+    object-fit: cover;
+  }
+}
+.dropdown-content li a {
+  color: rgb(0, 0, 0) !important;
+}
+.card-image {
+  width: 100%;
+}
+
+.btn-flat {
+  color: $accent-color;
+}

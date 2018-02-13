@@ -1,0 +1,41 @@
+---
+layout: default
+---
+  {% for post in site.posts %}
+  <div class='post-ribbon' style="background: url('{{ page.image }}') center/cover"></div>
+  {% endfor %}
+
+  <div class='card col s12'>
+    <div class='card-content'>
+      <h3>{{ page.title }}</h3>
+      <div class='grey-text'>
+        {{ page.date | date: '%b %-d, %Y' }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories %} • {% for cat in page.categories %} {{ cat }} {% endfor %} {% endif %}
+      </div>
+
+      <article class='post-content'>
+        <p>{{ content }}</p>
+      </article>
+
+      <!-- Disqus comments -->
+      {% if site.disqus %}
+      <div>
+        <h3>Comments</h3>
+        {% include disqus.html %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class='fixed-action-btn'>
+    <a class='btn-floating btn-large'>
+      <i class='large material-icons waves-effect'>share</i>
+    </a>
+    <ul>
+      <li><a href='https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}' class='btn-floating tooltipped waves-effect blue darken-2' data-position='left' data-delay='50' data-tooltip='Facebook'><span>f</span></a></li>
+      <li><a href='https://twitter.com/share?url={{ page.url | prepend: site.url }}&text={{ post.title }}&via={{ site.twitter_username }}' class='btn-floating tooltipped waves-effect white' data-position='left' data-delay='50' data-tooltip='Twitter'><img src='/img/Twitter bird.svg'></a></li>
+      <li><a href='https://plus.google.com/share?url={{ page.url | prepend: site.url }}' class='btn-floating tooltipped waves-effect red darken-1' data-position='left' data-delay='50' data-tooltip='Google Plus'><span>G+</span></a></li>
+      <li><a href='whatsapp://send?text={{ page.url | prepend: site.url }}' class='btn-floating tooltipped waves-effect green' data-position='left' data-delay='50' data-tooltip='WhatsApp'><img src='/img/Whatsapp.svg'></a></li>
+      <li><a href='sms:?body={{ page.url | prepend: site.url }}' class='btn-floating tooltipped waves-effect blue darken-1' data-position='left' data-delay='50' data-tooltip='Text'><i class='material-icons'>message</i></a></li>
+      <li><a data-clipboard-text='{{ page.url | prepend: site.url }}' onclick="Materialize.toast('Copied', 4000)" class='btn-floating tooltipped waves-effect copy grey darken-3' data-position='left' data-delay='50' data-tooltip='Copy link'><i class='material-icons'>content_copy</i></a></li>
+    </ul>
+  </div>

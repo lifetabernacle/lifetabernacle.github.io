@@ -1,0 +1,26 @@
+  <header>
+    <nav role='navigation'>
+      <div class='nav-wrapper container'>
+        <a id='logo-container' href='/' class='brand-logo center'>{{ site.title }}</a>
+        <ul id='slide-out' class='side-nav'>
+          <li>
+            <div class='user-view'>
+              <div class='background'>
+                <img src='https://lh3.googleusercontent.com/-Q4FGCXrIpWI/Wf36IIpxcdI/AAAAAAAA45U/t3pl7jCtzec6gkRc9lTmjujAH4NgC4g7gCJkCGAYYCw/w1456-h3200-fcrop64=1,00000000ffffffff-rw/CollageMaker_20171104_023512271.jpg'>
+              </div>
+              <a href='{{ site.google_plus_com }}'><img class='circle' src='https://lh3.googleusercontent.com/-Qe-znfDIa6U/AAAAAAAAAAI/AAAAAAAA0TY/UTuTd-ykjrQ/s240-p-rw-no/photo.jpg'></a>
+              <a href='{{ site.google_plus_com }}'><span class='white-text name'>Giovanni Gallardo</span></a>
+              <a href='mailto:{{ site.email }}'><span class='white-text email'>{{ site.email }}</span></a>
+            </div>
+          </li>
+          <li><a href='/' class='waves-effect'>Home</a></li>
+          {% for page in site.pages %}
+            {% if page.title %}
+            <li><a href='{{ page.url | prepend: site.baseurl }}' class='waves-effect'>{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <a href='#' data-activates='slide-out' class='sidenav-button'><i class='material-icons'>menu</i></a>
+      </div>
+    </nav>
+  </header>

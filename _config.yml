@@ -1,0 +1,24 @@
+# Site settings
+title: Life Tabernacle
+email: lifetaboffice@gmail.com
+description: Life Tabernacle Apostolic Church of Porterville
+baseurl: '/' # the subpath of your site, e.g. /blog/
+url: 'http://www.lifetabporterville.org' # the base hostname & protocol for your site
+github_username: gio1135
+google_plus_com: 'https://plus.google.com/101881077338747748663'  # Community link
+google_plus_per: '+lifetabporterville'  #Personal link
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+disqus: true
+disqus_shortname: 'lifetabporterville'
+
+# SEO
+plugins:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
