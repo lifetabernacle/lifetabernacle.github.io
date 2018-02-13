@@ -45,7 +45,7 @@ layout: default
       <div class='card-stacked'>
         <div class='card-content'>
           <h3>{{ post.title }}</h3>
-          {{ post.excerpt }}
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}
         </div>
       </div>
     </a>
