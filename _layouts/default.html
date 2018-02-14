@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-US'>
   {% include head.html %}
-  <body onLoad="M.toast({html: '<span>This is the new website under construction.</span><button class="btn-flat toast-action">Return to full site</button>'});">
+  <body>
     <!-- Start Layout -->
     {% include header.html %}
     <div class='post-ribbon'></div>
@@ -14,9 +14,6 @@
     <!-- /End Layout -->
 
     </script>
-
-    <!-- Jquery -->
-    <script rel='javascript' type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.js'></script>
 
     <!-- Copy to clipboard -->
     <script rel='javascript' type='text/javascript' src="{{ '/js/clipboard.min.js' | prepend: site.baseurl }}"></script>

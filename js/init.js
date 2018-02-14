@@ -21,7 +21,8 @@
 })(jQuery);
 
 // Side nav
-$('.sidenav-button').sideNav();
+var elem = document.querySelector('.sidenav');
+var instance = M.Sidenav.init(elem, options);
 
 // Tooltips
 $('.tooltipped').tooltip({delay: 50});
