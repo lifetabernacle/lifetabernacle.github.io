@@ -1,7 +1,16 @@
-  <header>
-    <nav role='navigation'>
+  <header class='navbar-fixed'>
+    <nav>
       <div class='nav-wrapper container'>
-        <a id='logo-container' href='/' class='brand-logo center'>{{ site.title }}</a>
+        <a href='/' class='brand-logo'>{{ site.title }}</a>
+
+        <ul id='nav-mobile' class='right hide-on-med-and-down'>
+          {% for page in site.pages %}
+            {% if page.title %}
+            <li><a href='{{ page.url | prepend: site.baseurl }}' class='waves-effect'>{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
         <ul id='slide-out' class='sidenav'>
           <li>
             <div class='user-view'>
@@ -20,7 +29,6 @@
             {% endif %}
           {% endfor %}
         </ul>
-        <a href='#' data-activates='slide-out' class='sidenav-button'><i class='material-icons'>menu</i></a>
         <a href='#' data-target='slide-out' class='sidenav-trigger'><i class='material-icons'>menu</i></a>
       </div>
     </nav>
