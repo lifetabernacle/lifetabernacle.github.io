@@ -1,0 +1,12 @@
+title: Life Tabernacle
+email: lifetabporterville@gmail.com
+description: >-
+  We here at Life Tabernacle simply just want to follow the truth. If it's not in
+  the Word of God, then it's not the truth.
+baseurl: ''
+url: 'http://lifetabporterville.org'
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
