@@ -33,7 +33,7 @@ map:
 
 	<div class='column'>
 		<form method='post' action='https://getsimpleform.com/messages?form_api_token=1de1384429b63b21f8ac04c5d2525957'>
-		     <input type='hidden' name='redirect_to' value='contact-success.html'>
+		    <input type='hidden' name='redirect_to' value='{{ site.url }}{{ site.baseurl }}/contact-success.html'>
 			<label for='email_address'>Email Address</label>
 			<input id='email_address' type='text' name='email' />
 
