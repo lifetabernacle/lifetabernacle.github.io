@@ -1,8 +1,8 @@
 ---
-name: John Doe
-image: "//placebear.com/440/440?a=.png"
-credentials: LLB
-phone_extension: "11"
+name: Giovanni Gallardo
+image: '{{ site.baseurl }}/images/gio1135.png'
+credentials: HTML, CSS, JS, Jekyll
+email: giogallardo117@gmail.com
 ---
 
-With an interest in employment law, John works tirelessly to improve workplaces.
+Hi
