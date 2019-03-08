@@ -33,12 +33,17 @@ map:
 
 	<div class='column'>
 		<form method='post' action='https://getsimpleform.com/messages?form_api_token=1de1384429b63b21f8ac04c5d2525957'>
-		    <input type='hidden' name='redirect_to' value='{{ site.url }}{{ site.baseurl }}/contact-success.html'>
-			<label for='email_address'>Email Address</label>
-			<input id='email_address' type='text' name='email' />
+		    <input type='hidden' name='redirect_to' value='{{ site.url }}{{ site.baseurl }}/contact-success.html' />
 
 			<label for='name'>Name</label>
 			<input id='name' type='text' name='name' />
+
+			<label for='email_address'>Email address</label>
+			<input id='email_address' type='text' name='email' />
+
+			<label for='phone'>Phone number</label>
+			<input id='phone' type='tel' name='phone'
+       pattern='[0-9]{3} [0-9]{3}-[0-9]{4}' />
 
 			<label for='message'>Message</label>
 			<textarea id='message' name='message'></textarea>
