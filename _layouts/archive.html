@@ -1,21 +1,22 @@
 ---
 layout: default
-call_to_action: Contact
-background_image_path:
 ---
 
-{% if page.title %}
-	<div class='page-header'>
-		<h2>{{ page.title }} Advice</h2>
+<section class="hero" style="background-image: url(https://source.unsplash.com/MqJX_8EaStM/2000x1322)">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1>The latest news</h1>
+			<p class="subtext">Hear the latest progress on Frisco and tips on making life long friends.</p>
+		</div>
 	</div>
-{% endif %}
+</section>
 
-<article class='content'>
-	<p class='editable'>You're currently looking at advice categorised under <strong>{{ page.title }}</strong>. <a href='{{ site.baseurl }}/advice/'>View all advice</a> instead.</p>
+<section>
+	<div class="text-container">
+		<p class="change-category">You're currently looking at advice categorised under <strong>{{ page.title }}</strong>. <a href="{{ site.baseurl }}/blog/">View all posts</a> instead.</p>
 
-	<ol class='post-list'>
-		{% for post in page.posts %}
-			{% include post-summary.html post=post %}
-		{% endfor %}
-	</ol>
-</article>
+		<ul class="blog-posts">
+			{% include list-posts.html posts=page.posts %}
+		</ul>
+	</div>
+</section>
