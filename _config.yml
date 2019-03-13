@@ -3,7 +3,7 @@
 
 title: Life Tabernacle
 url: 'https://lifetabporterville.org/new'
-baseurl: '/''
+baseurl: '/'
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -92,13 +92,6 @@ defaults:
 # CloudCannon
 
 social_icons:
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
   - Email
   - RSS
 
