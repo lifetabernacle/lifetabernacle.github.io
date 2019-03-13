@@ -1,9 +1,9 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
-baseurl:
+title: Life Tabernacle
+url: 'https://lifetabporterville.org/new'
+baseurl: '/''
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -16,14 +16,14 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: gio1135
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+    - https://github.com/gio1135
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: America/Los_Angeles
 
 permalink: pretty
 
@@ -92,14 +92,6 @@ defaults:
 # CloudCannon
 
 social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
   - Email
   - RSS
 
