@@ -92,6 +92,13 @@ defaults:
 # CloudCannon
 
 social_icons:
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
   - Email
   - RSS
 
