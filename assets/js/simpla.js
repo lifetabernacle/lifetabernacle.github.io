@@ -8,3 +8,5 @@ Simpla.init({
 });
 
 window.Simpla = Simpla;
+
+window.SimplaAdmin = window.SimplaAdmin || {};
