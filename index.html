@@ -16,6 +16,17 @@
 		<meta name='msapplication-TileColor' content='#536272'>
 		<meta name='msapplication-config' content='/images/favicon/browserconfig.xml'>
 		<meta name='theme-color' content='#536272'>
+
+		<!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+		<script src='https://unpkg.com/simpla@^3.0.0'></script>
+		<script src='https://unpkg.com/simpla@^3.0.0/adapters/netlify.js'></script>
+		<script src='https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js' async></script>
+		<script src='assets/js/simpla.js'></script>
+
+		<!-- Import Simpla elements -->
+		<link rel='import' href='/bower_components/simpla-text/simpla-text.html'>
+		<link rel='import' href='/bower_components/simpla-img/simpla-img.html'>
+		<link rel='import' href='/bower_components/simpla-admin/simpla-admin.html' async>
 	</head>
 	<body class='is-preload'>
 		<!-- Wrapper -->
