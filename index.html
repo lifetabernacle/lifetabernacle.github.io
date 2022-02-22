@@ -16,17 +16,6 @@
 		<meta name='msapplication-TileColor' content='#536272'>
 		<meta name='msapplication-config' content='/images/favicon/browserconfig.xml'>
 		<meta name='theme-color' content='#536272'>
-
-		<!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
-		<script src='https://unpkg.com/simpla@^3.0.0'></script>
-		<script src='https://unpkg.com/simpla@^3.0.0/adapters/netlify.js'></script>
-		<script src='https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js' async></script>
-		<script src='assets/js/simpla.js'></script>
-
-		<!-- Import Simpla elements -->
-		<link rel='import' href='/bower_components/simpla-text/simpla-text.html'>
-		<link rel='import' href='/bower_components/simpla-img/simpla-img.html'>
-		<link rel='import' href='/bower_components/simpla-admin/simpla-admin.html' async>
 	</head>
 	<body class='is-preload'>
 		<!-- Wrapper -->
@@ -39,9 +28,9 @@
 						</div>
 						<div class='content'>
 							<div class='inner'>
-								<h1><simpla-text>Life Tabernacle</simpla-text></h1>
-								<p><simpla-text><strong>Address:</strong> 939 N Main St, Porterville, CA 93257</simpla-text></p>
-								<p><simpla-text><strong>Mailing address:</strong> 1279 W. Henderson #260, Porterville, CA 93257</simpla-text></p>
+								<h1>Life Tabernacle</h1>
+								<p><strong>Address:</strong> 939 N Main St, Porterville, CA 93257</p>
+								<p><strong>Mailing address:</strong> 1279 W. Henderson #260, Porterville, CA 93257</p>
 							</div>
 						</div>
 						<nav>
@@ -112,33 +101,16 @@
 						<!-- Contact -->
 							<article id='contact'>
 								<h2 class='major'>Contact</h2>
-								<form method='post' action='#'>
-									<div class='fields'>
-										<div class='field half'>
-											<label for='name'>Name</label>
-											<input type='text' name='name' id='name'>
-										</div>
-										<div class='field half'>
-											<label for='email'>Email</label>
-											<input type='text' name='email' id='email'>
-										</div>
-										<div class='field'>
-											<label for='message'>Message</label>
-											<textarea name='message' id='message' rows='4'></textarea>
-										</div>
-									</div>
-									<ul class='actions'>
-										<li><input type='submit' value='Send Message' class='primary'></li>
-										<li><input type='reset' value='Reset'></li>
-									</ul>
-								</form>
 								<ul class='icons'>
-									<li><a href='mailto:lifetabporterville@gmail.com' class='fas fa-envelope'><span class='label'></span></a></li>
-									<li><a href='tel:1-559-781-8068' class='fas fa-phone'><span class='label'></span></a></li>
+									<p><li><a href='tel:1-559-781-8068' class='fas fa-phone'><span class='label'></span></a></li><a href='tel:1-559-781-8606'>&lpar;559&rpar; 781&ndash;8068</a> &lpar;leave a message&rpar;</p>
+									<p><li><a href='mailto:lifetabporterville@gmail.com' class='fas fa-envelope'><span class='label'></span></a></li><a href='mailto:lifetabporterville@gmail.com'>lifetabporterville@gmail.com</a></p>
 								</ul>
 							</article>
 
 							<article id='hgr'>
+								<h2 class='major'>Holy Ghost radio</h2>
+								<p class='flow-text'>You can listen in live during <a href='#schedule'>service hours</a> or tune into Holy Ghost radio in the meantime.</p>
+								<audio controls='' autoplay='' name='media'><source src="https://us9.streamingpulse.com/ssl/7010" type="audio/mpeg"></audio>
 							</article>
 
 						<!-- Elements -->
